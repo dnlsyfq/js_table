@@ -1,7 +1,7 @@
 {
   "name": "rock-paper-or-scissors",
   "version": "1.0.0",
-  "description": "Codecademy Projects",
+  "description": "Codecademy Javascript Projects",
   "main": "index.html",
   "scripts": {
     "start": "serve",
