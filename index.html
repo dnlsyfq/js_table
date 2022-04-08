@@ -5,8 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Static Template</title>
+    <script>
+      function getddl(){
+        document.getElementById("lblmess").innerHTML = `The selected dropdown value is ${formid.ddselect[formid.ddselect.selectedIndex].text}`
+      }
+    </script>
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <form name="formid">
+      <select name="ddselect" onchange="getddl()">
+        <option>Select Game</option>
+        <option value="football">Football</option>
+        <option value="cricket">Cricket</option>
+        <option value="rugby">Rugby</option>
+        <option value="tennis">Tennis</option>
+      </select>
+    </form>
+    <label id="lblmess"></label>
   </body>
 </html>
